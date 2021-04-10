@@ -15,12 +15,11 @@ lucky_core.select { |member| member.starts_with?("J") }.any?
 lucky_core.select { |member| member.starts_with?("J") }.size
 # lucky_core.count { |member| member.starts_with?("J") }
 
-# ameba:disable Performance/ChainedCallWithNoBang
-lucky_core.uniq.sort
-# lucky_core.uniq!.sort
-
 lucky_core.map(&.chars).flatten
 # lucky_core.flat_map(&.chars)
+
+lucky_core.uniq.sort
+# lucky_core.uniq!.sort
 
 [nil, false].any?    # => false
 ![nil, false].empty? # => true
