@@ -1,5 +1,5 @@
-require "./helpers"
-require "./helpers"
+require "../helpers"
+require "../helpers"
 
 require "json"
 require "json"
@@ -11,8 +11,6 @@ video_topics = [
   "Crystal Shards",
   "Deployment Strategies",
 ]
-
-loop_through_topics(video_topics)
 
 publishing_priorities = {
   "high" => {
@@ -39,7 +37,7 @@ def yell_at_user
 end
 
 def loop_through_video_topics(topics : Array(String))
-  video_topics.each do |topic, index|
+  topics.each_with_index do |topic, index|
     if index == 0
       puts "This is the #{1}st topic"
     else
@@ -51,3 +49,5 @@ def loop_through_video_topics(topics : Array(String))
     puts "We're either done, or there was an error."
   end
 end
+
+loop_through_video_topics(video_topics)
