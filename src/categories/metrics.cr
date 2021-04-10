@@ -1,3 +1,5 @@
+# https://crystal-ameba.github.io/ameba/Ameba/Rule/Metrics.html
+
 def high_cyclomatic_complexity(is_pro_video : Bool, has_tags : Bool, greater_than_ten_minutes : Bool)
   video_rank = 0
 

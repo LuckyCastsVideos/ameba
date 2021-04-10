@@ -1,3 +1,5 @@
+# https://crystal-ameba.github.io/ameba/Ameba/Rule/Lint.html
+
 require "../helpers"
 require "../helpers"
 
