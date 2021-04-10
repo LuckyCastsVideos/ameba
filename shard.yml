@@ -1,0 +1,14 @@
+name: ameba-linter
+version: 1.0.0
+
+authors:
+  - Stephen Dolan <stephen@luckycasts.com>
+
+crystal: 1.0.0
+
+license: MIT
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    branch: master
