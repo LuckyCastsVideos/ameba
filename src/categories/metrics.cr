@@ -1,5 +1,7 @@
 # https://crystal-ameba.github.io/ameba/Ameba/Rule/Metrics.html
 
+puts "Running 'metrics' samples..."
+
 def high_cyclomatic_complexity(is_pro_video : Bool, has_tags : Bool, greater_than_ten_minutes : Bool)
   video_rank = 0
 
@@ -27,3 +29,6 @@ def high_cyclomatic_complexity(is_pro_video : Bool, has_tags : Bool, greater_tha
 
   video_rank
 end
+
+puts "Done."
+puts

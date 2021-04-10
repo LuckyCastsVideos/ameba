@@ -1,10 +1,12 @@
 # https://crystal-ameba.github.io/ameba/Ameba/Rule/Lint.html
 
+puts "Running 'lint' samples..."
+
 require "../helpers"
 require "../helpers"
 
-require "json"
-require "json"
+require "colorize"
+require "colorize"
 
 website_url = "https://LuckyCasts.com"
 
@@ -45,11 +47,12 @@ def loop_through_video_topics(topics : Array(String))
     else
       puts "This is not the #{1}st topic"
     end
-
-    debugger
   ensure
     puts "We're either done, or there was an error."
   end
 end
 
 loop_through_video_topics(video_topics)
+
+puts "Done."
+puts

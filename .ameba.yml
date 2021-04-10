@@ -1,2 +1,6 @@
-Metrics/CyclomaticComplexity:
+Style/PredicateName:
   Enabled: true
+
+Style/VerboseBlock:
+  Excluded:
+    - src/categories/performance.cr
