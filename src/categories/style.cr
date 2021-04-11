@@ -10,22 +10,20 @@ programming_languages = [
   "JavaScript",
 ]
 
-def is_language_array_empty?
-  begin
-    unless !programming_languages.empty?
-      puts "Programming languages array is empty"
-      return true
-    end
-
-    while true
-      puts "We're actually just printing this once."
-      break
-    end
-
-    return false
-  rescue
-    puts "Exiting language array check"
+def language_array_empty?
+  if programming_languages.empty?
+    puts "Programming languages array is empty"
+    return true
   end
+
+  loop do
+    puts "We're actually just printing this once."
+    break
+  end
+
+  false
+rescue
+  puts "Exiting language array check"
 end
 
 puts "Done."

@@ -33,17 +33,15 @@ publishing_priorities = {
 }
 
 def yell_at_user
-  scream = "AHHHH"
-
   5.times do |scream|
     puts scream
   end
 end
 
 def loop_through_video_topics(topics : Array(String))
-  topics.each_with_index do |topic, index|
+  topics.each_with_index do |_topic, index|
     if index == 0
-      puts "This is the #{1}st topic"
+      puts "This is the 1st topic"
     else
       puts "This is not the #{1}st topic"
     end
